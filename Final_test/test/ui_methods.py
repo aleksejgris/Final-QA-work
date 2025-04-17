@@ -14,16 +14,16 @@ from selenium.webdriver.support.ui import WebDriverWait
           self._browser.maximize_window()
 
        def authorization(self):
-          self._browser.find_element(By.CSS_SELECTOR, '[type="button"<Войти>]').click()
+          self._browser.find_element(XPath , '//button[contains(text(),"Войти")]'.click()
 
        def account(self):
-           self._browser.find_element(By.CSS_SELECTOR, '[class="AuthaccountListItem-displayName"<A-1007.A>]').click()
+           self._browser.find_element(By.CSS_SELECTOR, '[class="AuthaccountListItem-displayName"]').click()
 
        def password(self):
            self._browser.find_element(By.CSS_SELECTOR,"[class=Textinput Textinput_iconRight Textinput_view_conteast Textinput_asze_1]").send_keys("10071009al")
 
        def button_continue(self):
-           self._browser.find_element(By.CSS_SELECTOR, '[class="Button2-Text"<Продолжить>]').click()
+           self._browser.find_element(By.CSS_SELECTOR, '[class="Button2-Text"]').click()
 
        def data_entry(self):
-           self._browser.browser.find_element(By.NAME, 'kp_query').send_keys('Шрек')
+           self._browser.find_element(By.NAME, 'kp_query').send_keys('Шрек')

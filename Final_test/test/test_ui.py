@@ -13,15 +13,15 @@ from test.ui_methods import MainPage
 @allure.severity("BLOCKER")
 def test_open_kinopoisk():
      with allure.step("Открыть сайт кинопоиск"):
-     browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-     main_page = MainPage(browser)
+          browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+          main_page = MainPage(browser)
      with allure.step("Кликнуть кнопку войти"):
-     main_page.authorization()
+          main_page.authorization()
      with allure.step("Выбрать аккаунт А-1007.А"):
-     main_page.account()
+          main_page.account()
      with allure.step("Ввести пароль" ,'10071009al'):
-     main_page.password()
+          main_page.password()
      with allure.step("Кликнуть кнопку Продолжить"):
-     main_page.button_continue()
+          main_page.button_continue()
      with allure.step("В поле поиск ввести Шрек"):
-     main_page.button_continue()
+          main_page.button_continue()
